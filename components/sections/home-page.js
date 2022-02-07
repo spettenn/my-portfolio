@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const home_page_wrapper = styled.div`
 	display: flex;
@@ -16,8 +17,8 @@ const home_page_soMe = styled.div``;
 
 const home_page_arrow = styled.div``;
 
-export function home_page() {
+export function Home_page() {
 	return <section className='home_page_wrapper'></section>;
 }
 
-export default home_page;
+export default Home_page;

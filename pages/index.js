@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import home_page from '../components/sections/home-page.js';
-import styles from '../styles/Home.module.css';
+import Home_page from '../components/sections/home-page.js';
 
-function HomePage() {
+export default function page() {
 	<>
 		<head>
 			<title>portfolio</title>
@@ -12,9 +11,7 @@ function HomePage() {
 			/>
 		</head>
 		<body>
-			<home_page />
+			<Home_page />
 		</body>
 	</>;
 }
-
-export default HomePage;

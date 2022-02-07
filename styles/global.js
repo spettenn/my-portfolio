@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const globalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 :root {
     --font-body: PT Sans, Helvetica Neue, sans-serif;
     --font-headings: Rokurou, Arial, serif;
@@ -120,4 +120,4 @@ const globalStyle = createGlobalStyle`
     animation-duration: var(--speed-medium); 
 };
   `;
-export default globalStyle;
+export default GlobalStyle;
