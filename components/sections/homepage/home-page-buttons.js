@@ -11,6 +11,8 @@ const Button_homepage = styled.a`
 	padding: 0.7rem;
 	background-color: white;
 	-webkit-box-shadow: 5px 5px 15px -1px #000000;
+	cursor: pointer;
+	text-decoration: none;
 `;
 
 export default Button_homepage;
