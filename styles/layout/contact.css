@@ -1,0 +1,22 @@
+.input_name {
+	height: 3.5rem;
+	width: 25rem;
+}
+.input_email {
+	height: 3.5rem;
+	width: 25rem;
+}
+.input_message {
+	height: 8rem;
+	width: 25rem;
+}
+.card_title {
+	text-decoration: none;
+	color: #2d1d1d;
+	font-size: 2.25rem;
+}
+.card_text {
+	text-decoration: none;
+	color: #2d1d1d;
+	font-size: 1.2rem;
+}

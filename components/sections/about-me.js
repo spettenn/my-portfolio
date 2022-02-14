@@ -12,19 +12,29 @@ const About_me_wrapper = styled.div`
 	margin: 0%;
 	text-align: center;
 `;
+const About_me_flex = styled.div`
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+`;
 
 function About_me_layout() {
 	return (
 		<About_me_wrapper>
 			<h1 className='about_title'>About me</h1>
-			<p className='about_text'>
-				Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy text ever
-				since the 1500s, when an unknown printer took a galley of type and
-				scrambled it to make a type specimen book. It has survived not only five
-				centuries, but also the leap into electronic typesetting, remaining
-				essentially unchanged
-			</p>
+			<About_me_flex>
+				<p className='about_text'>
+					Hello, I am 26 year old, born in Bærum, Norway. I have for the past
+					two years been developing my skills in front-end development at Noroff
+					school of technology. I started web-development after corona hit the
+					coasts of Norway and I was forced to change my profession. I then was
+					looking for another opportunity as i was currently working in
+					tourism... For me, changing profession was an eye opener as i have
+					always been an technology enthusiast, and getting to know and
+					experience how the applications and solutions I have been using my
+					whole life.
+				</p>
+			</About_me_flex>
 		</About_me_wrapper>
 	);
 }

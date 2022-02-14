@@ -37,9 +37,9 @@
 }
 /* about me fonts and style */
 .about_title {
-	margin-top: 5rem;
 	color: white;
 	font-size: 4rem;
+	text-align: center;
 }
 .about_text {
 	color: #ececec;
