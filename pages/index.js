@@ -5,6 +5,9 @@ import GlobalStyle from '../styles/global.js';
 // import ContactForm from '../src/components/contact/contact.js';
 // import Previous_proojects from '../src/components/previousProjects/previous-proojects.js';
 import LandingPage from '../src/components/ladingPage/home-page.js';
+import AboutMe from '../src/components/aboutMe/about-me.js';
+import PreviousProojects from '../src/components/previousProjects/previous-proojects.js';
+import ContactForm from '../src/components/contact/contact.js';
 
 const Arrow_down = (props) => {
 	return (
@@ -34,15 +37,20 @@ export default function page() {
 					integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p'
 					crossOrigin='anonymous'
 				/>
-				<link rel='stylesheet' href='../styles/globals.css' />
 			</Head>
 			<body>
 				<section>
 					<LandingPage />
 				</section>
-				<section></section>
-				<section></section>
-				<section></section>
+				<section>
+					<AboutMe />
+				</section>
+				<section>
+					<PreviousProojects />
+				</section>
+				<section>
+					<ContactForm />
+				</section>
 			</body>
 		</>
 	);

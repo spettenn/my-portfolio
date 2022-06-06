@@ -1,9 +1,11 @@
 @import '../styles/fonts/fonts.css';
 @import '../styles/layout/homePage_layout.css';
 @import '../styles/layout/contact.css';
-@import '../stleslandingPage/landing.css';
+@import '../styles/landingPage/landing.css';
 @import '../styles/contact/contact.css';
 @import '../styles/aboutMe/aboutMe.css';
+@import '../styles/navigation/nav.css';
+@import "../styles/previousProjects/previousProjects.css";
 
 html,
 body {

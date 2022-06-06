@@ -11,32 +11,6 @@ const ContactForm = () => {
 		}, 100);
 	};
 
-	const Contact_page_wrapper = styled.div`
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		background-color: #ff6161;
-		height: 100vh;
-		width: 100%;
-		margin: 0%;
-	`;
-	const Title_contact = styled.h1`
-		font-size: 2rem;
-		color: white;
-		text-align: center;
-		width: 100%;
-	`;
-	const Form_layer = styled.div`
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		height: 95vh;
-	`;
-	const Form_content_layer = styled.div`
-		width: 60%;
-		display: flex;
-		justify-content: center;
-	`;
 	const Form_info_layer = styled.div`
 		display: flex;
 		flex-direction: column;
@@ -56,18 +30,18 @@ const ContactForm = () => {
 	if (submitted) {
 		return (
 			<>
-				<Contact_page_wrapper>
+				<div className='contact_page'>
 					<div className='submit_text'>Thank you!</div>
 					<div className='submit_text'>We will be in touch soon.</div>
-				</Contact_page_wrapper>
+				</div>
 			</>
 		);
 	}
 	return (
-		<Contact_page_wrapper>
+		<div className='contact_page'>
 			<h1 className='about_title'>Previous Projects</h1>
-			<Form_layer>
-				<Form_content_layer>
+			<div className='form_container'>
+				<div className='form_container_inner'>
 					<form
 						action={FORM_ENDPOINT}
 						onSubmit={handleSubmit}
@@ -107,10 +81,10 @@ const ContactForm = () => {
 							</button>
 						</div>
 					</form>
-				</Form_content_layer>
+				</div>
 				<Form_info_layer></Form_info_layer>
-			</Form_layer>
-		</Contact_page_wrapper>
+			</div>
+		</div>
 	);
 };
 

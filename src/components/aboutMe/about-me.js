@@ -1,26 +1,15 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const About_me_wrapper = styled.div`
-	display: flex;
-	flex-direction: column;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	background-color: #fec401;
-	height: 100vh;
-	width: 100%;
-	margin: 0%;
-	text-align: center;
-`;
 const About_me_flex = styled.div`
 	display: flex;
 	flex-direction: row;
 	height: fit-content;
 `;
 
-function About_me_layout() {
+function AboutMe() {
 	return (
-		<About_me_wrapper>
+		<div className='about_me_container'>
 			<h1 className='about_title'>About me</h1>
 			<About_me_flex>
 				<p className='about_text'>
@@ -35,8 +24,8 @@ function About_me_layout() {
 					whole life.
 				</p>
 			</About_me_flex>
-		</About_me_wrapper>
+		</div>
 	);
 }
 
-export default About_me_layout;
+export default AboutMe;
