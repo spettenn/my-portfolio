@@ -1,0 +1,46 @@
+.landing_page_container {
+    display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	background-color: #ff6161;
+ 	height: 100vh;
+ 	width: 100%;
+ 	margin: 0;
+ 	text-align: center;
+}
+.landing_btn_container {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.landing_arrow_container {
+    display: flex;
+	justify-content: center;
+	height: 6rem;
+}
+.landing_icon_container {
+	display: flex;
+	justify-content: center;
+	height: 12rem;
+	width: 100%;
+}
+.landing_btn {
+	display: flex;
+	flex-direction: row;
+	height: 68px;
+	width: 213px;
+	border-radius: 2px;
+	border: 1px solid #474747;
+	margin: 2rem;
+	padding: 0.7rem;
+	background-color: white;
+	-webkit-box-shadow: 5px 5px 15px -1px #000000;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: inline;
+}
+.landing_Arrow_container {
+	display: flex;
+	justify-content: center;
+	height: 6rem;
+}
