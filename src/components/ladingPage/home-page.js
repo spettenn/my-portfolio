@@ -52,7 +52,7 @@ const LandingPage = () => {
 					</div>
 					<div className='landing_Arrow_container'>
 						<Arrow_down>
-							<a herf=''></a>
+							<a herf='#aboutMe'></a>
 						</Arrow_down>
 					</div>
 				</div>

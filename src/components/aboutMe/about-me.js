@@ -9,7 +9,7 @@ const About_me_flex = styled.div`
 
 function AboutMe() {
 	return (
-		<div className='about_me_container'>
+		<div id='aboutMe' className='about_me_container'>
 			<h1 className='about_title'>About me</h1>
 			<About_me_flex>
 				<p className='about_text'>
