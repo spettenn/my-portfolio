@@ -10,22 +10,19 @@ const ContactForm = () => {
 			setSubmitted(true);
 		}, 100);
 	};
-
-	const Form_info_layer = styled.div`
-		display: flex;
-		flex-direction: column;
-		width: 40%;
-	`;
-
 	const Input = styled.input`
-		height: 3.5rem;
-		width: 25rem;
+		height: 3rem;
+		width: 20rem;
 		margin: 1rem;
+		padding: 0.2rem;
+		font-size: 1.2rem;
 	`;
 	const Textarea = styled.textarea`
-		height: 8rem;
+		height: 10rem;
 		width: 25rem;
 		margin: 1rem;
+		padding: 0.2rem;
+		font-size: 1.2rem;
 	`;
 	if (submitted) {
 		return (
@@ -39,7 +36,7 @@ const ContactForm = () => {
 	}
 	return (
 		<div className='contact_page'>
-			<h1 className='about_title'>Previous Projects</h1>
+			<h1 className='about_title'>Contact me</h1>
 			<div className='form_container'>
 				<div className='form_container_inner'>
 					<form
@@ -47,7 +44,7 @@ const ContactForm = () => {
 						onSubmit={handleSubmit}
 						method='POST'
 						target='_blank'>
-						<div className='mb-3 pt-0'>
+						<div className=''>
 							<Input
 								type='text'
 								placeholder='Your name'
@@ -56,7 +53,7 @@ const ContactForm = () => {
 								required
 							/>
 						</div>
-						<div className='mb-3 pt-0'>
+						<div className=''>
 							<Input
 								type='email'
 								placeholder='Email'
@@ -65,7 +62,7 @@ const ContactForm = () => {
 								required
 							/>
 						</div>
-						<div className='mb-3 pt-0'>
+						<div className=''>
 							<Textarea
 								placeholder='Your message'
 								name='message'
@@ -73,16 +70,23 @@ const ContactForm = () => {
 								required
 							/>
 						</div>
-						<div className='mb-3 pt-0'>
-							<button
-								className='bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
-								type='submit'>
+						<div className=''>
+							<button className='submit_btn' type='submit'>
 								Submit
 							</button>
 						</div>
 					</form>
 				</div>
-				<Form_info_layer></Form_info_layer>
+				<div className='form_info_container'>
+					<div className='title_container_contact'>
+						<h1 className='contact_info_title'>Other means of contact</h1>
+					</div>
+					<div className='text_container_info'>
+						<p>E-mail: Aleksanderspetalen@gmail.com</p>
+						<br />
+						<p>gitHub: https://github.com/spettenn</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
