@@ -1,5 +1,5 @@
 .project_card {
-    max-width: 70rem;
+    max-width: 60rem;
 	height: 30vh;
 	background-color: white;
 	cursor: pointer;
@@ -8,6 +8,10 @@
 	display: flex;
 	flex-direction: row;
 	border-radius: 2px;
+}
+.project_card:hover {
+	border: 1px solid #fec401;
+	
 }
 .previous_projects_container {
     display: flex;
@@ -38,7 +42,7 @@
 }
 .card_text {
     color: #2d1d1d;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-decoration: none;
 }
 .arrow_container {

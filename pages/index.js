@@ -39,16 +39,16 @@ export default function page() {
 				/>
 			</Head>
 			<body>
-				<section>
+				<section id='ladning'>
 					<LandingPage />
 				</section>
-				<section>
+				<section id='aboutMe'>
 					<AboutMe />
 				</section>
-				<section>
+				<section id='pProjects'>
 					<PreviousProojects />
 				</section>
-				<section>
+				<section id='contact'>
 					<ContactForm />
 				</section>
 			</body>

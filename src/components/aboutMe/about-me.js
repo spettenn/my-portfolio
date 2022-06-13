@@ -1,12 +1,23 @@
 import styled from 'styled-components';
 import React from 'react';
+import Image from 'next/image';
 
 const About_me_flex = styled.div`
 	display: flex;
 	flex-direction: row;
 	height: fit-content;
 `;
-
+const Arrow_down = (props) => {
+	return (
+		<Image
+			src='/../public/media/down_arrow.png'
+			alt='down arrow'
+			width={400}
+			height={400}
+			href='../components/sections/about-me.js'
+		/>
+	);
+};
 function AboutMe() {
 	return (
 		<div id='aboutMe' className='about_me_container'>
@@ -24,6 +35,9 @@ function AboutMe() {
 					whole life.
 				</p>
 			</About_me_flex>
+			<div>
+				<Arrow_down />
+			</div>
 		</div>
 	);
 }

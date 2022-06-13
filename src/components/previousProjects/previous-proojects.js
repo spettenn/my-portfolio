@@ -29,6 +29,7 @@ const Arrow_down = (props) => {
 			alt='arrow for page nav'
 			width={400}
 			height={400}
+			href='#aboutMe'
 		/>
 	);
 };
